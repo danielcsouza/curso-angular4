@@ -25,7 +25,4 @@ import { Students } from './student/students.model';
 })
 
 export class AppModule {
- luke = {name: 'Luke', isJedi: true, temple: 'Coruscan' };
- leia = {name: 'Leia', isJedi: false };
- solo = {name: 'Han Solo', isJedi: false };
 }

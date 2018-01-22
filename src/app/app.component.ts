@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'jad';
+  luke = {name: 'Luke', isJedi: true, temple: 'Coruscan' };
+ leia = {name: 'Leia', isJedi: false };
+ solo = {name: 'Han Solo', isJedi: false };
 }
