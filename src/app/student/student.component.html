@@ -1,6 +1,10 @@
-<div>
- Student :{{estudante.name}}
- <div [hidden]="!estudante.isJedi">
+<div *ngIf="estudante">
+ Student :<a href="#" (click)="clicked()"> {{estudante.name}}</a>
+ <div *ngIf="estudante.isJedi">
  Jedi Temple: {{estudante.temple}}
+ <br>
+ <button (click)="description.focus()">focus</button>
+ <br>
+ <textarea #description></textarea>
  </div>
 </div> 
