@@ -9,7 +9,9 @@ import {ROUTES} from './app.routes';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component'
+import { AboutComponent } from './about/about.component';
+import { RestaurantsComponent } from './restaurants/restaurants.component';
+import { RestaurantComponent } from './restaurants/restaurant/restaurant.component'
 
 
 
@@ -18,7 +20,9 @@ import { AboutComponent } from './about/about.component'
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    RestaurantsComponent,
+    RestaurantComponent
   ],
   imports: [
     BrowserModule,
