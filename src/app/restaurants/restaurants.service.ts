@@ -10,10 +10,18 @@ import { ErrorHandler } from 'app/app.error-handler';
 
 @Injectable()
 export class RestaurantsServices{
-      constructor(private http:Http) {}
-      restaurants():Observable<Restaurant[]>{
+      constructor(private http: Http) {}
+      restaurants(): Observable<Restaurant[]>{
           return this.http.get(MEAT_API + '/restaurants')
           .map(r => r.json())
           .catch(ErrorHandler.handleError)
       }
+
+
+      restaurantById(id: string): Observable<Restaurant>{
+        return this.http.get(MEAT_API + '/restaurants/' + id)
+        .map(r => r.json())
+        .catch(ErrorHandler.handleError)
+      }
+
 }
