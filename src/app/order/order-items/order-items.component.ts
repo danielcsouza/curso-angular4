@@ -2,13 +2,13 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { CartItem } from 'app/restaurant-detail/shopping-cart/carts-item.model';
 
 
-
 @Component({
   selector: 'mt-order-items',
   templateUrl: './order-items.component.html'
 })
+
 export class OrderItemsComponent implements OnInit {
-  @Input() items:CartItem[]
+  @Input() items: CartItem[]
 
   @Output() increaseQty = new EventEmitter<CartItem>()
   @Output() decreaseQty = new EventEmitter<CartItem>()
