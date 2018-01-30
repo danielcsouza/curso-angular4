@@ -25,7 +25,7 @@ export class ShopingCartService{
     this.item.splice(this.item.indexOf(item),1);
   }
 
-  total():number{
+  total(): number{
     return this.item
     .map(p=>p.value())
     .reduce((prev,value) => prev + value, 0)
