@@ -1,4 +1,4 @@
-        
+
                 <table class="table table-striped">
                   <thead>
                   <tr>
@@ -10,6 +10,7 @@
                   </tr>
                   </thead>
                   <tbody>
+
                   <tr *ngFor="let item of items">
                     <td class="text-center">
                       <a (click)="emitDecreaseQty(item)" class="btn btn-sm"><i class="fa fa-minus"></i></a>
@@ -21,7 +22,7 @@
                     <td>{{item.menuItem.description}}</td>
                     <td class="text-right">{{item.value() | currency: 'BRL': true }}</td>
                     <td class="text-right">
-                      <a  (click)="emitRemoveQty(item)" class="btn btn-sm danger"><i class="fa fa-remove"></i></a>
+                      <a  (click)="emitRemove(item)" class="btn btn-sm danger"><i class="fa fa-remove"></i></a>
                     </td>
                   </tr>
 

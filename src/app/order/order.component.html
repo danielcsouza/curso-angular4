@@ -50,16 +50,19 @@
                 <p class="lead">Itens do Pedido:</p>
               </div>
 
-              <div class="col-xs-12" *ngIf="!items">
+              <div class="col-xs-12" *ngIf="cartItems().length === 0">
                   <p>Não há itens em seu carrinho. Que tal começa por <a [routerLink]="['/restaurants']">aqui</a>?</p>
               </div>
 
-              <div class="col-xs-12 table-responsive" *ngIf="items">
-                  <mt-order-items
+              <div class="col-xs-12 table-responsive" *ngIf="cartItems().length > 0">
+                   <mt-order-items
                   [items]="cartItems()"
-                  [increaseQty]="increaseQty($event)"
-                  [decreaseQty]="decreaseQty($event)"
-                  [remove]="remove($event)"></mt-order-items>
+                  (increaseQty)="increaseQty($event)"
+                  (decreaseQty)="decreaseQty($event)"
+                  (remove)="remove($event)"></mt-order-items>
+
+
+                  <!-- <mt-order-items [items]="cartItems()"></mt-order-items> -->
 
 
               </div>
