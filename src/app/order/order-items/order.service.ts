@@ -36,10 +36,12 @@ export class OrderService{
     this.cartServices.clear();
   }
 
-  checkOrder(order: Order): Observable<any>{
+  checkOrder(order: Order): Observable<Order>{
     const headers = new Headers()
     headers.append('Content-Type', 'application/json')
     return this.http.post(MEAT_API + '/orders', JSON.stringify(order), new RequestOptions({headers: headers}))
-    .map(response=>response.json)
+    .map(response=> response.json())
+    .map(t=> t.id)
+
   }
 }

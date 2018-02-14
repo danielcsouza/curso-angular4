@@ -1,5 +1,6 @@
 class Order{
 constructor(
+  public id: number,
   public address: string,
   public number: number,
   public complement: string,
