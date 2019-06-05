@@ -1,10 +1,26 @@
 {
+<<<<<<< HEAD
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/spec",
     "baseUrl": "./",
     "module": "commonjs",
     "target": "es5",
+=======
+  "compilerOptions": {
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": [
+      "es2016"
+    ],
+    "outDir": "../out-tsc/spec",
+    "module": "commonjs",
+    "target": "es6",
+    "baseUrl": "",
+>>>>>>> acca9c737d1cd059f2a213d20a6a47c0f89003f7
     "types": [
       "jasmine",
       "node"
@@ -14,7 +30,11 @@
     "test.ts"
   ],
   "include": [
+<<<<<<< HEAD
     "**/*.spec.ts",
     "**/*.d.ts"
+=======
+    "**/*.spec.ts"
+>>>>>>> acca9c737d1cd059f2a213d20a6a47c0f89003f7
   ]
 }

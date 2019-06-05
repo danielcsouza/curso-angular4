@@ -2,6 +2,7 @@
 
 # compiled output
 /dist
+<<<<<<< HEAD
 /dist-server
 /tmp
 /out-tsc
@@ -11,11 +12,23 @@
 
 # IDEs and editors
 /.idea
+=======
+/tmp
+
+# dependencies
+/node_modules
+/bower_components
+
+# IDEs and editors
+/.idea
+/.vscode
+>>>>>>> acca9c737d1cd059f2a213d20a6a47c0f89003f7
 .project
 .classpath
 .c9/
 *.launch
 .settings/
+<<<<<<< HEAD
 *.sublime-workspace
 
 # IDE - VSCode
@@ -24,11 +37,17 @@
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+=======
+>>>>>>> acca9c737d1cd059f2a213d20a6a47c0f89003f7
 
 # misc
 /.sass-cache
 /connect.lock
+<<<<<<< HEAD
 /coverage
+=======
+/coverage/*
+>>>>>>> acca9c737d1cd059f2a213d20a6a47c0f89003f7
 /libpeerconnection.log
 npm-debug.log
 testem.log
@@ -38,6 +57,14 @@ testem.log
 /e2e/*.js
 /e2e/*.map
 
+<<<<<<< HEAD
 # System Files
 .DS_Store
 Thumbs.db
+=======
+#System Files
+.DS_Store
+Thumbs.db
+
+package-lock.json
+>>>>>>> acca9c737d1cd059f2a213d20a6a47c0f89003f7
